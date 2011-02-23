@@ -28,7 +28,7 @@ function Elo.UpdateRating (Rat, Score, ExpScore)
 	
 	if (Rat < 2100) then 		K = 32
 	elseif (Rat < 2400) then 	K = 24
-	else 						K = 16 end
+	end
 	
 	return math.floor(Rat + K * (Score - ExpScore))
 end
